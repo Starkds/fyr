@@ -13,7 +13,7 @@ const path = require('path');
 const PORT = process.env.PORT;
 const cors = require('cors');
 
-mongoose.connect(process.env.Local_MONGODB_URI).
+mongoose.connect(process.env.MONGODB_URI).
 then(() =>{
     console.log('mongodb connected successfully')
 }).catch((error) =>{
